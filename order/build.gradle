@@ -71,4 +71,10 @@ dependencies {
     implementation project(':common')
     //引入annotation,让注解处理器处理注解
     implementation project(':arouter_annotation')
+
+    //注解处理器
+    annotationProcessor project(':arouter_compiler')
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
 }

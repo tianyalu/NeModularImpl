@@ -1,7 +1,7 @@
 package com.sty.ne.modularimpl.test;
 
-import com.sty.ne.modularimpl.api.ARouterLoadGroup;
-import com.sty.ne.modularimpl.api.ARouterLoadPath;
+import com.sty.ne.modularimpl.api.core.ARouterLoadGroup;
+import com.sty.ne.modularimpl.api.core.ARouterLoadPath;
 
 import java.util.HashMap;
 import java.util.Map;

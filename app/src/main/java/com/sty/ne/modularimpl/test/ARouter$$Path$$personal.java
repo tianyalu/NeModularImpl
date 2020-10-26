@@ -1,7 +1,7 @@
 package com.sty.ne.modularimpl.test;
 
 import com.sty.ne.modularimpl.annotation.model.RouterBean;
-import com.sty.ne.modularimpl.api.ARouterLoadPath;
+import com.sty.ne.modularimpl.api.core.ARouterLoadPath;
 import com.sty.ne.modularimpl.order.Order_MainActivity;
 
 import java.util.HashMap;

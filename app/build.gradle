@@ -50,6 +50,9 @@ dependencies {
     //引入annotation,让注解处理器处理注解
     implementation project(':arouter_annotation')
 
+    //注解处理器
+    annotationProcessor project(':arouter_compiler')
+
     //如果是集成化模式，进行发布版本时，各个模块都不能独立运行了
     if(isRelease) {
         implementation project(':order')

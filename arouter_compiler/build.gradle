@@ -8,6 +8,8 @@ dependencies {
     compileOnly 'com.google.auto.service:auto-service:1.0-rc4'
     annotationProcessor 'com.google.auto.service:auto-service:1.0-rc4'
 
+    // 帮助我们通过类调用的形式生成Java代码
+    implementation 'com.squareup:javapoet:1.10.0'
     //引入annotation,让注解处理器处理注解
     implementation project(':arouter_annotation')
 }

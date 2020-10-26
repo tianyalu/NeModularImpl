@@ -8,6 +8,9 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import com.sty.ne.modularimpl.annotation.ARouter;
+
+@ARouter(path = "/personal/Order_MainActivity")
 public class Order_MainActivity extends AppCompatActivity {
     private Button btnHome;
     private Button btnPersonal;

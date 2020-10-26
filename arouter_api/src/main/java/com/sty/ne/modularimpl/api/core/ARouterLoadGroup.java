@@ -1,4 +1,4 @@
-package com.sty.ne.modularimpl.api;
+package com.sty.ne.modularimpl.api.core;
 
 import java.util.Map;
 
