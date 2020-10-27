@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 import com.sty.ne.modularimpl.annotation.ARouter;
 
-@ARouter(path = "/personal/Order2Activity")
+@ARouter(path = "/order/Order2Activity")
 public class Order2Activity extends AppCompatActivity {
 
     @Override

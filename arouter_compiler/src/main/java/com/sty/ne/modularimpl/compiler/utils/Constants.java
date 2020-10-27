@@ -35,7 +35,7 @@ public class Constants {
     public static final String GROUP_METHOD_NAME = "loadGroup";
 
     //APT生成的路由组Group对应的详细Path类文件名
-    public static final String PATH_FILE_NAME = "ARouter$Path$$";
+    public static final String PATH_FILE_NAME = "ARouter$$Path$$";
     //APT生成的路由组Group类文件名
     public static final String GROUP_FILE_NAME = "ARouter$$Group$$";
 }
