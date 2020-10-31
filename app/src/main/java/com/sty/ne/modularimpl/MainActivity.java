@@ -20,12 +20,18 @@ public class MainActivity extends AppCompatActivity {
     private Button btnOrder;
     private Button btnPersonal;
 
+    String name;
+    int age = 1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         initView();
+
+        name = getIntent().getStringExtra("name");
+        age = getIntent().getIntExtra("age", age);
     }
 
     private void initView() {
@@ -62,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
             if(routerBean != null) {
                 Intent intent = new Intent(this, routerBean.getClazz());
                 intent.putExtra("name", "sty");
+                intent.putExtra("age", 18);
                 startActivity(intent);
             }
         } catch (Exception e) {
