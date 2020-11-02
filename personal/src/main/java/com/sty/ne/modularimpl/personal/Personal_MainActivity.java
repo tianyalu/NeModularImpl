@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.sty.ne.modularimpl.annotation.ARouter;
+import com.sty.ne.modularimpl.api.RouterManager;
 
 @ARouter(path = "/personal/Personal_MainActivity")
 public class Personal_MainActivity extends AppCompatActivity {
@@ -43,7 +44,10 @@ public class Personal_MainActivity extends AppCompatActivity {
     }
 
     private void onBtnOrderClicked() {
-
+        RouterManager.getInstance()
+                .build("/order/Order_MainActivity")
+                .withString("name", "哈哈哈哈哈")
+                .navigation(this);
     }
 
     private void onBtnHomeClicked() {

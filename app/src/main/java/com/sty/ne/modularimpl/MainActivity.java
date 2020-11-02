@@ -11,6 +11,7 @@ import com.sty.ne.modularimpl.annotation.ARouter;
 import com.sty.ne.modularimpl.annotation.model.RouterBean;
 import com.sty.ne.modularimpl.api.core.ARouterLoadGroup;
 import com.sty.ne.modularimpl.api.core.ARouterLoadPath;
+import com.sty.ne.modularimpl.apt.ARouter$$Group$$personal;
 import com.sty.ne.modularimpl.test.ARouter$$Group$$order;
 
 import java.util.Map;
@@ -78,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void onBtnPersonalClicked() {
         //最终集成化模式，所有子模块APT生成的类文件都会打包到apk中
-        ARouterLoadGroup loadGroup = new ARouter$$Group$$order();
+        ARouterLoadGroup loadGroup = new ARouter$$Group$$personal();
         Map<String, Class<? extends ARouterLoadPath>> groupMap = loadGroup.loadGroup();
         // app - personal
         Class<? extends ARouterLoadPath> clazz = groupMap.get("personal");

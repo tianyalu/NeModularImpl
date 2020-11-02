@@ -10,6 +10,7 @@ import android.widget.Button;
 
 import com.sty.ne.modularimpl.annotation.ARouter;
 import com.sty.ne.modularimpl.annotation.Parameter;
+import com.sty.ne.modularimpl.api.RouterManager;
 import com.sty.ne.modularimpl.api.core.ParameterLoad;
 
 @ARouter(path = "/order/Order_MainActivity")
@@ -57,7 +58,11 @@ public class Order_MainActivity extends AppCompatActivity {
     }
 
     private void onBtnPersonalClicked() {
-
+        RouterManager.getInstance()
+                .build("/personal/Personal_MainActivity")
+                .withInt("age", 22222)
+                .withString("name", "styttt")
+                .navigation(this);
     }
 
     private void onBtnHomeClicked() {
